@@ -8,4 +8,6 @@ To get started, simply create a folder under /posts. The name of this folder is 
 
 Inside the category folder, create relevant articles via Markdown.
 
-And viola! You have a blog.
+Update /lib/posts.js with the new category.
+
+And viola! You have a blog you can add/remove/edit categories and files with.
