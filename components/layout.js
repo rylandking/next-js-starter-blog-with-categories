@@ -2,13 +2,16 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
-import '../pages/index'
+
+
 
 
 const name = 'Platform Team Communcations Hub'
 export const siteTitle = 'Platform Team Communication Hub'
 
+
 export default function Layout({ children, home }) {
+
   return (
     <div className= "row {styles.container}">
       <Head>
@@ -31,16 +34,16 @@ export default function Layout({ children, home }) {
               </div>
               <div className='nine columns'>
                 <section className='headerTitle'>
-                <h1>{name}</h1>
+                  <h1>{name}</h1>
                 </section>
-                <section className='navbar'>
-                <button onClick={() => setCategory(viewCategory === 'neck-pain' ? 'all' : 'neck-pain')}>Neck Pain</button>
-            <button onClick={() => setCategory(viewCategory === 'low-back-pain' ? 'all' : 'low-back-pain')}>Low Back Pain</button>
-            <button onClick={() => setCategory(viewCategory === 'chronic-pain' ? 'all' : 'chronic-pain')}>Chronic Pain</button>
-            <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>
-            <button onClick={() => setCategory(viewCategory === 'miscellaneous' ? 'all' : 'miscellaneous')}>Miscellaneous</button>
-            <button onClick={() => setCategory(viewCategory === 'all' ? 'all': 'all')}>All</button>      
-                </section>
+                {/* <section className='navbar'>
+                  <button onClick={() => setCategory(viewCategory === 'neck-pain' ? 'all' : 'neck-pain')}>Neck Pain</button>
+                  <button onClick={() => setCategory(viewCategory === 'low-back-pain' ? 'all' : 'low-back-pain')}>Low Back Pain</button>
+                  <button onClick={() => setCategory(viewCategory === 'chronic-pain' ? 'all' : 'chronic-pain')}>Chronic Pain</button>
+                  <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>
+                  <button onClick={() => setCategory(viewCategory === 'miscellaneous' ? 'all' : 'miscellaneous')}>Miscellaneous</button>
+                  <button onClick={() => setCategory(viewCategory === 'all' ? 'all': 'all')}>All</button>      
+                </section> */}
               </div>
             </>
           ) : (
@@ -70,16 +73,16 @@ export default function Layout({ children, home }) {
         </header>
     </div>    
 
-    <div className='row'>
+    {/* <div className='row'>
       <div className='twelve columns navbar'>
-            {/* <button onClick={() => setCategory(viewCategory === 'neck-pain' ? 'all' : 'neck-pain')}>Neck Pain</button>
+             <button onClick={() => setCategory(viewCategory === 'neck-pain' ? 'all' : 'neck-pain')}>Neck Pain</button>
             <button onClick={() => setCategory(viewCategory === 'low-back-pain' ? 'all' : 'low-back-pain')}>Low Back Pain</button>
             <button onClick={() => setCategory(viewCategory === 'chronic-pain' ? 'all' : 'chronic-pain')}>Chronic Pain</button>
             <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>
             <button onClick={() => setCategory(viewCategory === 'miscellaneous' ? 'all' : 'miscellaneous')}>Miscellaneous</button>
-            <button onClick={() => setCategory(viewCategory === 'all' ? 'all': 'all')}>All</button>          */}
+            <button onClick={() => setCategory(viewCategory === 'all' ? 'all': 'all')}>All</button>          *
         </div>
-      </div>
+      </div> */}
      
 
     <div className='row'>

@@ -47,12 +47,14 @@ img {
   text-align: center;
   height: 100px;
   width: 100%;
+  padding: 25px;
 }
 
 .navbar {
   text-align: center; 
   background-color: black;
   width: 100%;
+  height: 100%; 
 }
 
 .navbar > button {
@@ -61,7 +63,8 @@ img {
 
 .sidebar {
   background-color: rgba(0,0,0,.5);
-  margin-top: 20%; 
+  margin-top: 5%;
+  margin-left: 2%; 
   padding: 5%; 
   color: #fff;
   border-radius: 10px;
@@ -71,16 +74,25 @@ img {
   color: #ffc425;
 }
 
-.main {
-  padding: 5%;
+.postsList {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.postsList > li {
+  margin-bottom: 10%; 
 }
 
 .postsListTitle {
   text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .postsListSingleTitle {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 400;
 }
 
