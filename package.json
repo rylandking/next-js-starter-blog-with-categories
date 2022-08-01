@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && export"
+    "build": "next build && next export"
   },
   "dependencies": {
     "date-fns": "^2.14.0",
