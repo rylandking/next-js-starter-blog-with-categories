@@ -34,7 +34,8 @@ img {
 .headerImg {
   background-color: #ffc425;
   width: 100%;
-  height: 150px;
+  height: 100px;
+  margin-left: 76px;
 }
 
 .headerTitle {
@@ -53,12 +54,34 @@ img {
 .navbar {
   text-align: center; 
   background-color: black;
-  width: 100%;
-  height: 100%; 
+  /* width: 100%;
+  height: 100%;  */
+  width: fit-content;
+  height: fit-content;
 }
 
-.navbar > button {
+.navbarButtonsList {
+  margin-top: 50px;
+}
+
+.navbarItem{
   margin-right: 1%;
+}
+
+.navbarItem > button {
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.navbarItem > button:hover {
+  color: #ffc425;
+}
+
+.navbarItem > button:selection {
+  color: #ffc425;
+  background-color: transparent;
 }
 
 .sidebar {
