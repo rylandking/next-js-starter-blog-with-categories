@@ -28,13 +28,16 @@ export default function Post({ postData }) {
         <meta name="twitter:site" content="@herenowbody"/>
         <meta name="twitter:creator" content="@herenowbody"/>      
       </Head>
-      {postData.title}
-      <br />
-      {postData.description}
-      <br />
-      <Date dateString={postData.date} />
-      <br />
-      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <div className='ten columns singlePost'>
+        {postData.title}
+        <br />
+        {postData.description}
+        <br />
+        <Date dateString={postData.date} />
+        <br />
+        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      </div>
+
     </Layout>
   )
 }

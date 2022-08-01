@@ -32,10 +32,8 @@ export default function Layout({ children, home }) {
                   alt={name}
                 />
               </div>
-              <div className='nine columns'>
-                <section className='headerTitle'>
-                  <h1>{name}</h1>
-                </section>
+              <div className='nine columns header'>
+                  <h1 className='headerTitle'>{name}</h1>
                 {/* <section className='navbar'>
                   <button onClick={() => setCategory(viewCategory === 'neck-pain' ? 'all' : 'neck-pain')}>Neck Pain</button>
                   <button onClick={() => setCategory(viewCategory === 'low-back-pain' ? 'all' : 'low-back-pain')}>Low Back Pain</button>
@@ -48,25 +46,23 @@ export default function Layout({ children, home }) {
             </>
           ) : (
             <>
-            <div className='header'>
-              <section>
+            <div className='three columns header'>
                 <img
                   className='headerImg'
                   priority
-                  src="/vermeer-logo.svg"
+                  src="images/vermeer-logo.svg"
                   // height={144}
                   // width={144}
-                  alt={name}
-                />               
-              </section>
-              <section>
-                <h1 className='headerTitle'>{name}</h1>
-              </section>
-            <section className='{styles.backToHome}'>
+                  // alt={name}
+                />
+              </div>
+              <div className='nine columns header'>
+                  <h1 className='headerTitle'>{name}</h1>
+              </div>
+            <div className='two columns {styles.backToHome}'>
               <Link href="/">
                 <a>← Back to home</a>
               </Link>
-            </section>
           </div>
             </>
           )}

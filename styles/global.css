@@ -46,7 +46,7 @@ img {
   align-items: center; 
   justify-content: center; */
   text-align: center;
-  height: 100px;
+  height: 75px;
   width: 100%;
   padding: 25px;
 }
@@ -125,4 +125,8 @@ img {
   display: flex; 
   align-items: center;
   justify-content: center;
+}
+
+.singlePost {
+  padding: 5%;
 }
