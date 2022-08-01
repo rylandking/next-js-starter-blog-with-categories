@@ -9,47 +9,58 @@ export const siteTitle = 'Platform Team Communication Hub'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className= "row {styles.container}">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/vermeer-favicon.png" />
       </Head>
-      <header className={styles.header}>
-        {home ? (
-          <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <a>
+
+    <div className='row'>
+      <header>
+          {home ? (
+            <>
+              <div className='two columns header'>
                 <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  className='headerImg'
+                  priority
+                  src="/vermeer-logo.svg"
+                  // height={144}
+                  // width={144}
                   alt={name}
                 />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+              </div>
+              <div className='ten columns headerTitle'>
+                <h1>{name}</h1>
+              </div>
+            </>
+          ) : (
+            <>
+            <div className='two columns header'>
+              <img
+                className='headerImg'
+                priority
+                src="/vermeer-logo.svg"
+                // height={144}
+                // width={144}
+                alt={name}
+              />
+            </div>
+            <div className='eight columns headerTitle>'>
+              <h1 className='headerTitles'>{name}</h1>
+            </div>
+            <div className='two columns {styles.backToHome}'>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a>← Back to home</a>
               </Link>
-            </h2>
-          </>
-        )}
-      </header>
+            </div>
+            </>
+          )}
+        </header>
+    </div>
+      
+
+      
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+
     </div>
   )
 }
