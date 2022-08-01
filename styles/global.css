@@ -88,9 +88,21 @@ img {
   background-color: rgba(0,0,0,.5);
   margin-top: 5%;
   margin-left: 2%; 
-  padding: 5%; 
+  padding: 1%; 
   color: #fff;
   border-radius: 10px;
+}
+
+.sidebarTitle {
+  width: 100%; 
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.sidebarItem > p {
+  font-size: 16px;
 }
 
 .sidebarItem > p > a {
