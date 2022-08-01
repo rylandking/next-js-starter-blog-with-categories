@@ -2,10 +2,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Roboto Condensed, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  background: #fff;
 }
 
 * {
@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: #0a682f;
   text-decoration: none;
 }
 
@@ -26,6 +26,35 @@ img {
   display: block;
 }
 
-headerImg {
-  background-color: gold;
+.header {
+  background-color: black;
+}
+
+.headerImg {
+  background-color: #ffc425;
+}
+
+.headerTitle {
+  color: #fff;
+  /* background-color: black; */
+  font-weight: 900;
+  display: flex;  
+  align-items: center; 
+  justify-content: center;
+}
+
+.sidebar {
+  background-color: rgba(0,0,0,.5);
+  margin-top: 20%; 
+  padding: 5%; 
+  color: #fff;
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25%; 
 }

@@ -18,7 +18,8 @@ export default function Layout({ children, home }) {
       <header>
           {home ? (
             <>
-              <div className='two columns header'>
+              {/* <div className='two columns header'> */}
+              <div className='header'>
                 <img
                   className='headerImg'
                   priority
@@ -27,9 +28,9 @@ export default function Layout({ children, home }) {
                   // width={144}
                   alt={name}
                 />
-              </div>
-              <div className='ten columns headerTitle'>
-                <h1>{name}</h1>
+              {/* </div> */}
+              {/* <div className='ten columns headerTitle'> */}
+                <h1 className='headerTitle'>{name}</h1>
               </div>
             </>
           ) : (
@@ -56,6 +57,18 @@ export default function Layout({ children, home }) {
           )}
         </header>
     </div>    
+
+    <div className='row'>
+        <div classname = 'navbar'>
+          <section>
+            <button onClick={() => setCategory(viewCategory === 'neck-pain' ? 'all' : 'neck-pain')}>Neck Pain</button>
+            <button onClick={() => setCategory(viewCategory === 'low-back-pain' ? 'all' : 'low-back-pain')}>Low Back Pain</button>
+            <button onClick={() => setCategory(viewCategory === 'chronic-pain' ? 'all' : 'chronic-pain')}>Chronic Pain</button>
+            <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>
+          </section>
+        </div>
+      </div>
+     
 
     <div className='row'>
       <div className='nine columns'>

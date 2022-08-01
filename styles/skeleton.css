@@ -158,9 +158,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #0a682f; }
 a:hover {
-  color: #0FA0CE; }
+  color: #ffc425; }
 
 
 /* Buttons
@@ -416,3 +416,5 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
