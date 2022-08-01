@@ -18,8 +18,24 @@ export default function Layout({ children, home }) {
       <header>
           {home ? (
             <>
-              {/* <div className='two columns header'> */}
-              <div className='header'>
+              <div className='two columns header'>
+                <img
+                  className='headerImg'
+                  priority
+                  src="images/vermeer-logo.svg"
+                  // height={144}
+                  // width={144}
+                  alt={name}
+                />
+              </div>
+              <div className='ten columns headerTitle'>
+                <h1>{name}</h1>
+              </div>
+            </>
+          ) : (
+            <>
+            <div className='header'>
+              <section>
                 <img
                   className='headerImg'
                   priority
@@ -27,32 +43,17 @@ export default function Layout({ children, home }) {
                   // height={144}
                   // width={144}
                   alt={name}
-                />
-              {/* </div> */}
-              {/* <div className='ten columns headerTitle'> */}
+                />               
+              </section>
+              <section>
                 <h1 className='headerTitle'>{name}</h1>
-              </div>
-            </>
-          ) : (
-            <>
-            <div className='two columns header'>
-              <img
-                className='headerImg'
-                priority
-                src="/vermeer-logo.svg"
-                // height={144}
-                // width={144}
-                alt={name}
-              />
-            </div>
-            <div className='eight columns headerTitle>'>
-              <h1 className='headerTitles'>{name}</h1>
-            </div>
-            <div className='two columns {styles.backToHome}'>
+              </section>
+            <section className='{styles.backToHome}'>
               <Link href="/">
                 <a>← Back to home</a>
               </Link>
-            </div>
+            </section>
+          </div>
             </>
           )}
         </header>
@@ -60,12 +61,12 @@ export default function Layout({ children, home }) {
 
     <div className='row'>
         <div classname = 'navbar'>
-          <section>
             <button onClick={() => setCategory(viewCategory === 'neck-pain' ? 'all' : 'neck-pain')}>Neck Pain</button>
             <button onClick={() => setCategory(viewCategory === 'low-back-pain' ? 'all' : 'low-back-pain')}>Low Back Pain</button>
             <button onClick={() => setCategory(viewCategory === 'chronic-pain' ? 'all' : 'chronic-pain')}>Chronic Pain</button>
             <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>
-          </section>
+            <button onClick={() => setCategory(viewCategory === 'miscellaneous' ? 'all' : 'miscellaneous')}>Miscellaneous</button>
+            <button onClick={() => setCategory(viewCategory === 'all' ? 'all': 'all')}>All</button>            
         </div>
       </div>
      

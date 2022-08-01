@@ -28,6 +28,8 @@ img {
 
 .header {
   background-color: black;
+  width: 100%; 
+  height: 15%; 
 }
 
 .headerImg {
@@ -35,12 +37,17 @@ img {
 }
 
 .headerTitle {
-  color: #fff;
+  color: black;
   /* background-color: black; */
-  font-weight: 900;
-  display: flex;  
+  font-weight: 900; 
+  /* display: flex;  
   align-items: center; 
-  justify-content: center;
+  justify-content: center; */
+  text-align: center;
+}
+
+.navbar {
+  color: red; 
 }
 
 .sidebar {
@@ -51,10 +58,27 @@ img {
   border-radius: 10px;
 }
 
-.navbar {
+.sidebarItem > p > a {
+  color: #ffc425;
+}
+
+.main {
+  padding: 5%;
+}
+
+.postsListTitle {
+  text-align: center;
+}
+
+.postsListSingleTitle {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.postsListImage {
+  max-width: 144px; 
+  max-width: 144px; 
   display: flex; 
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-left: 25%; 
 }

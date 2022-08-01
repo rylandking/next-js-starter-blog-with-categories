@@ -16,26 +16,26 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}> */}
+        <h2 className= "postsListTitle">Recent Posts</h2>
+        <ul className='postsList'>
           {allPostsData.map(({ id, category, date, title, image }) => (
-            <li className={utilStyles.listItem} key={id} style={{ 
+            <li className='postsListItem' key={id} style={{ 
               display: (viewCategory === category || viewCategory === 'all') ? "block":"none"
             }}>
             <Link href="/[category]/[id]" as={`/${category}/${id}`}>
-              <a>{title}</a>
+              <a className='postsListSingleTitle'>{title}</a>
             </Link>
             <br />
             <small className={utilStyles.lightText}>
               <Date dateString={date} />
             </small>
             <br />
-            <img src={image} alt={id}/>
+            <img classname = "postsListImage" src={image} alt={id}/>
           </li>
           ))}
         </ul>
-      </section>
+      {/* </section> */}
     </Layout>
   )
 }
