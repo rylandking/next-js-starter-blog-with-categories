@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
            <button onClick={() => setCategory(viewCategory === 'low-back-pain' ? 'all' : 'low-back-pain')}>Low Back Pain</button>
           </li>
           <li className='navbarItem'>
-            <button onClick={() => setCategory(viewCategory === 'chronic-pain' ? 'all' : 'chronic-pain')}>Chronic Pain</button>
+            <button onClick={() => setCategory(viewCategory === 'axway' ? 'all' : 'axway')}>Axway</button>
           </li>
           <li className='navbarItem'>
             <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>

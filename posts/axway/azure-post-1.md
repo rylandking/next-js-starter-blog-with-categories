@@ -1,5 +1,5 @@
 ---
-title: 'Chronic Pain 1'
+title: 'Azure Post 1'
 date: '2019-01-01'
 description: 'This is my first article about chronic pain.'
 image: '/images/chronic-pain-1.jpg'
