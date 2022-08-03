@@ -37,11 +37,13 @@ export default function Home({ allPostsData }) {
           <li className='navbarItem'>
             <button onClick={() => setCategory(viewCategory === 'jenkins' ? 'all' : 'jenkins')}>jenkins</button>
           </li>
-          <li>
+          <li className='navbarItem'>
             <button onClick={() => setCategory(viewCategory === 'netiq' ? 'all' : 'netiq')}>netiq</button>
           </li>
+          <li className='navbarItem'>
             <button onClick={() => setCategory(viewCategory === 'sonarqube' ? 'all' : 'sonarqube')}>sonarqube</button>
-          <li>
+          </li>
+          <li className='navbarItem'>
             <button onClick={() => setCategory(viewCategory === 'vmware' ? 'all' : 'vmware')}>vmware</button>
           </li>
           <li className='navbarItem'>
