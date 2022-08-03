@@ -5,6 +5,7 @@ description: 'This is my second article about chronic pain.'
 image: '/images/chronic-pain-2.jpg'
 url: 'https://herenowbody.com/chronic-pain/chronic-pain-2'
 ---
+arbitrary change
 
 CHRONIC PAIN We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
