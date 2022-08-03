@@ -6,7 +6,7 @@ image: '/images/chronic-pain-1.jpg'
 url: 'https://herenowbody.com/chronic-pain/chronic-pain-1'
 ---
 
-arbitrary change
+arbitrary change, arbitrary change
 
 CHRONIC PAIN two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
