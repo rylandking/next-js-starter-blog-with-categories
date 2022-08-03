@@ -35,7 +35,7 @@ export default function Home({ allPostsData }) {
             <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>
           </li>
           <li className='navbarItem'>
-            <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>
+            <button onClick={() => setCategory(viewCategory === 'azure' ? 'all' : 'azure')}>azure</button>
           </li>
           <li className='navbarItem'>
             <button onClick={() => setCategory(viewCategory === 'pelvic-health' ? 'all' : 'pelvic-health')}>Pelvic Health</button>
