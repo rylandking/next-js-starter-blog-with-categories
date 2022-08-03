@@ -6,6 +6,8 @@ image: '/images/chronic-pain-1.jpg'
 url: 'https://herenowbody.com/chronic-pain/chronic-pain-1'
 ---
 
+arbitrary change
+
 CHRONIC PAIN two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
 
 - **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
