@@ -15,7 +15,7 @@ export default function Layout({ children, home }) {
   return (
     <div className= "row {styles.container}">
       <Head>
-        <link rel="icon" href="/vermeer-favicon.png" />
+        <link rel="icon" href="/vermeer-favicon.ico" />
       </Head>
 
     <div className='row'>
